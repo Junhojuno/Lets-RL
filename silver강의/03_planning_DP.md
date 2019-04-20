@@ -54,6 +54,6 @@
 
 ### advanced
 - asynchronous DP : 전체 state가 아닌 선택된 state에 대해서 backup되기때문에 DP의 문제점인 계산량을 감소시킬 수 있다.
-  - in-place DP : v_k(s')으로 v_{k+1}(s)가 아닌 v_k(s)를 업데이트 한다...그래도 수렴은 한다니....
+  - in-place DP : $v_k(s')$으로 $v_{k+1}$(s)가 아닌 v_k(s)를 업데이트 한다...그래도 수렴은 한다니....
   - prioritizing sweeping : bellman error가 큰 state부터 선별적으로 골라 업데이트(backup)
   - real-time DP : agent가 방문한 state만 먼저 업데이트
