@@ -13,9 +13,10 @@ Reinforcement Learning myself :joy:
 
 ### 논문 리뷰
   ##### Value-Based RL
-  - [DQN]() : Playing Atari with Deep Reinforcement Learning
-  - [Double DQN]() : Deep Reinforcement Learning with Double Q-learning
-  - [PER]() : Prioritized Experience Replay
+  - [DQN](https://github.com/Junhojuno/Lets-RL/blob/master/PaperReview/Extended%20DQN.pdf) : Playing Atari with Deep Reinforcement Learning
+  - [Double DQN](https://github.com/Junhojuno/Lets-RL/blob/master/PaperReview/Extended%20DQN.pdf) : Deep Reinforcement Learning with Double Q-learning
+  - [PER](https://github.com/Junhojuno/Lets-RL/blob/master/PaperReview/Extended%20DQN.pdf) : Prioritized Experience Replay
+  - [Dueling Network](https://github.com/Junhojuno/Lets-RL/blob/master/PaperReview/Extended%20DQN.pdf)
 
   ##### Policy-Based RL
   - [TRPO]() : Trust Region Policy Optimization
