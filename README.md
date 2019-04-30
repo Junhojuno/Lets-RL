@@ -19,7 +19,7 @@ Reinforcement Learning myself :joy:
   - [Dueling Network](https://github.com/Junhojuno/Lets-RL/blob/master/PaperReview/Extended%20DQN.pdf)
 
   ##### Policy-Based RL
-  - [TRPO]() : Trust Region Policy Optimization
+  - [TRPO](https://github.com/Junhojuno/Lets-RL/blob/master/PaperReview/Trust%20Region%20Policy%20Optimization.pdf) : Trust Region Policy Optimization
   - [PPO]() : Proximal Policy Optimization
   - [DPG]() : Deterministic Policy Gradient Algorithms
   - [DDPG]() : Continuous Control with Deep Reinforcement Learning
