@@ -24,7 +24,7 @@ Reinforcement Learning myself :joy:
   - [DDPG]() : Continuous Control with Deep Reinforcement Learning
   - [TD3]() : Addressing Function Approximation Error in Actor-Critic Methods
 
-### Code Implements with Pytorch
+### 코드  with Pytorch
 - Cartpole
   - [DQN]()
 - MountainCar
