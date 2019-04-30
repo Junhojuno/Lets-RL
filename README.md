@@ -11,6 +11,19 @@ Reinforcement Learning myself :joy:
 - [Policy Gradient](https://github.com/Junhojuno/Lets-RL/blob/master/silver%EA%B0%95%EC%9D%98/07_Policy_Gradient.md)
 - [Model-Based RL](https://github.com/Junhojuno/Lets-RL/blob/master/silver%EA%B0%95%EC%9D%98/08_model-basedRL.md)
 
+### 논문 리뷰
+  ##### Value-Based RL
+  - [DQN]() : Playing Atari with Deep Reinforcement Learning
+  - [Double DQN]() : Deep Reinforcement Learning with Double Q-learning
+  - [PER]() : Prioritized Experience Replay
+
+  ##### Policy-Based RL
+  - [TRPO]() : Trust Region Policy Optimization
+  - [PPO]() : Proximal Policy Optimization
+  - [DPG]() : Deterministic Policy Gradient Algorithms
+  - [DDPG]() : Continuous Control with Deep Reinforcement Learning
+  - [TD3]() : Addressing Function Approximation Error in Actor-Critic Methods
+
 ### Code Implements with Pytorch
 - Cartpole
   - [DQN]()
