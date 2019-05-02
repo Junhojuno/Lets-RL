@@ -1,5 +1,11 @@
 # Prioritized Experience Replay
 
+| Keywords |
+|:-----------:|
+| Stochastic Prioritization |
+| Weighted Importance Sampling |
+|  |
+
 ### 0. Abstract
 - 이전 연구들이 experience transition을 uniform하게 sampling하였다.
 - 하지만, 이러한 uniform sampling은 각 transition의 중요도를 반영하지 않았다.
@@ -66,3 +72,9 @@
     - 모든 자료에 선형 변환을 적용하여 전체 자료의 분포를 평균 0, 분산 1이 되도록 만드는 과정이다.
     - 스케일링은 자료의 오버플로우(overflow)나 언더플로우(underflow)를 방지하고 
     - 독립 변수의 공분산 행렬의 조건수(condition number)를 감소시켜 최적화 과정에서의 안정성 및 수렴 속도를 향상시킨다.
+  - 이 논문에서는 bootstrap등으로 생기는 small bias는 무시하였다.
+  - bias는 importance sampling을 사용하여 beta를 시간에 걸쳐 scheduling하면서 annealing한다.(말이 좀 어렵..)
+  - beta를 scheduling하여 bias를 바로잡겠다는 의미.
+  - 이 beta는 앞서 나온 alpha와 상호작용하는데, 
+  - 둘 다 증가시키면 prioritized sampling은 강하게, bias에 대한 통제도 강하게!
+  
