@@ -4,7 +4,6 @@
 |:-----------:|
 | Stochastic Prioritization |
 | Weighted Importance Sampling |
-|  |
 
 ### 0. Abstract
 - 이전 연구들이 experience transition을 uniform하게 sampling하였다.
