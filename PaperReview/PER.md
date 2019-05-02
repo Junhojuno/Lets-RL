@@ -33,6 +33,10 @@
 - 자세한건 부속 논문 참고
 
 ### 3. Prioritized Replay
+
+  <p align="center"><img src='https://github.com/Junhojuno/Lets-RL/blob/master/PaperReview/images/PER/pseudoCode.PNG?raw=true' height=300 width=700></p>
+
+
 - replay memory는 보통 2 Levels로 진행 : 어떤 experience를 저장할거냐, 어떤 experience를 replay할거냐
 - 여기선 어떤 experience를 replay할거냐를 다룬다.
   ##### 3.1 A Motivating Example
@@ -47,6 +51,9 @@
   - 한번도 가보지 않아 TD error가 없는 것들은 최우선순위로 둔다.
   
   ##### 3.3 Stochastic Prioritization
+  
+  <img src='https://github.com/Junhojuno/Lets-RL/blob/master/PaperReview/images/PER/prioritization.PNG?raw=true' height=300 width=700>
+  
   - TD error를 가지고 prioritization시 몇가지 문제가 있다.
   - 먼저, first visit에서 TD error가 작으면 오랫동안 replay되지 않을 것이다.
   - 또한, noisy spike에 민감하다. (noisy spike는 reward가 stochatic할때 나오는 일종의 uncertainty? error?)
@@ -64,6 +71,9 @@
     - 현재 이해한걸 바탕으로 써보면, value의 분포가 있고 우리는 value 분포의 기댓값을 estimate하고 있다.
     - 업데이트를 하는 sample들의 value는 기댓값이 같은 분포에서 나왔다는 가정하에 value를 구한다.
     - 하지만, prioritized replay가 분포를 변화시키고 결국엔 estimation이 수렴점을 변화시킨다.
+    
+  <p align="center"><img src='https://github.com/Junhojuno/Lets-RL/blob/master/PaperReview/images/PER/weightedIS.PNG?raw=true' height=100 width=200></p>
+  
   - 무튼 prioritized replay가 bias를 만들어내는데, 이러한 bias를 잡기위해 weighted importance sampling을 사용하는데..
   - 여기서 사용한 weighted importance sampling은 non-uniform sampling에 대한 보상개념으로 사용된다.(+bias 잡고)
   - weighted importance sampling으로 구한 w에 max w로 나눠주어 안정성을 확보한다.
