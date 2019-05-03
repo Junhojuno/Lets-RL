@@ -76,6 +76,7 @@
   
   - 무튼 prioritized replay가 bias를 만들어내는데, 이러한 bias를 잡기위해 weighted importance sampling을 사용하는데..
   - 여기서 사용한 weighted importance sampling은 non-uniform sampling에 대한 보상개념으로 사용된다.(+bias 잡고)
+  - **이게 왜 importance sampling weight에 대한 term인지는 아직 완벽하게 이해하지 못했다.(따로 정리 필요)**
   - weighted importance sampling으로 구한 w에 max w로 나눠주어 안정성을 확보한다.
     - 스케일링은 자료 집합에 적용되는 전처리 과정으로 
     - 모든 자료에 선형 변환을 적용하여 전체 자료의 분포를 평균 0, 분산 1이 되도록 만드는 과정이다.
@@ -86,4 +87,8 @@
   - beta를 scheduling하여 bias를 바로잡겠다는 의미.
   - 이 beta는 앞서 나온 alpha와 상호작용하는데, 
   - 둘 다 증가시키면 prioritized sampling은 강하게, bias에 대한 통제도 강하게!
+  
+  ##### 4. Atari Experiments
+  - 전체 실험과정에 대한 setting을 소개하고 있는 부분이다.
+  - 자세한건 논문 참고
   
