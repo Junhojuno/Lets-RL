@@ -34,4 +34,30 @@
   - 알고리즘 관점에서 expectation하나를 근사하는것보다 distribution을 근사하는 것이 더 이롭다.
   - Distributional Bellman operator가 **multimodality를 보존하여 이것이 학습에 안정성을 준다.**
   - 분포를 근사시키는게 policy를 학습시키면서 오는 non-stationary한 효과를 감소시킨다.(안정성이 올라간다는 소리인듯)
-  - 
+  
+### Setting
+- 기존 방법론들과 같이 environment와 상호작용하는 것을 모델링한다.
+- 다만 여기서 바뀐건 State를 의미하는게 S가 아닌 X라는 점.
+
+  ##### 2.1 Bellman Equations
+  - Z의 기댓값은 Q가 된다.
+  - 조금 생소한(?) notation이 등장한다.
+  - figure 1에서 (d) Projection step과 여기서 등장하는 대문자 Tau(타우)가 Bellman Operator로 등장한다.
+  - 해당 내용과 관련하여 David Silver의 RL 3강 DP를 참고하자.
+  - 정리하면, figure 1과 거기서 나온 Bellman operator T(tau)...이게 contraction/mapping개념과 맞물린다.
+  
+### The Distributional Bellman Operators
+- 이 논문에서 우리가 기존에 알던 Bellman Expectation Equation에서 Expectation부분을 없앴다.
+- 대신 full distribution을 고려하여, random variable Z를 다룬다.
+- 이번 절에서는 distributional한 operator의 이론적인 내용과 control setting에 대한 이해를 다룬다.
+- 알고리즘에 관심이 많은 독자에게 skip을 권유하는데...나는 도전!
+
+  ##### 3.1 Distributional Equations
+  - 확률공간(probability space)을 사용하는데 유용한 점이 있다고 한다.(뭐지?)
+  - 뭐 cdf에 대한 내용과 norm에 대한 얘기가 나온다.(Random variable U를 가지고 이야기한다.)
+  - U와 V는 서로 독립인 확률변수이지만 동일한 분포를 띈다는 것 같다.(i.i.d..?)
+  
+  ##### 3.2 The Wasserstein Metric
+  - 이 논문의 가장 핵심이 Wasserstein Metric이다.(두 cdf사이에서의 Wasserstein Metric)
+  - **두 cdf F,G의 Wasserstein Metric은 U-V의 norm이다?!**
+  - 여기서 inverse cdf의 개념이 나오고 이것이 quantile function이라고 한다.
