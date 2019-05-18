@@ -1,4 +1,6 @@
 ## Policy Gradient
+`이번장은 policy gradient기본부터 actor critic의 기본까지 내용이 부드럽게(?) 이어진다.`
+
 - 이전 강의에서는 scaled-up 된 환경에서 Value를 학습하는 방법을 배웠다.
 - 이번 강의에서는 직접 policy를 학습하는 방법을 배우도록 하자. 
 - Policy를 theta(parameter)로 표현해보자.(policy network)
