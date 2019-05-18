@@ -1,10 +1,5 @@
 # Deterministic Policy Gradient
 
-| keywords |
-|:--------:|
-| expected gradient of Q |
-| off-policy actor-critic algorithm |
-
 ### 요약 정리
 - 
 
@@ -13,6 +8,12 @@
 - 이로써 deterministic policy gradient가 **stochastic policy gradient보다 훨씬 효율적이다!**
 - exploration을 위해 off-policy actor critic algorithm을 소개하고
 - 이것을 통해 deterministic policy gradient를 학습한다.
+
+| keywords | 읽는 초점 |
+|:--------:|:----:|
+| deterministic policy | 기존 stochastic policy와 다른점과 의미하는게 뭐지? |
+| expected gradient of Q | 기존 policy gradient와 차이가 뭐가 있는거지? |
+| off-policy actor-critic algorithm | 이게 어떻게 알고리즘에 녹아 들어가 있지? |
 
 ### 1. Introduction
 - stochastic policy gradient에서는 policy가 분포형태를 띄게된다.
