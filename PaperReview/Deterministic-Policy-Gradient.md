@@ -24,3 +24,14 @@
 - 자세한 내용은 [여기](https://github.com/Junhojuno/Lets-RL/blob/master/silver%EA%B0%95%EC%9D%98/07_Policy_Gradient.md)
 
 ### 3. Gradients of Deterministic Policies
+- policy gradient를 deterministic policy까지 확장시키는데, stochastic policy 이론과 유사하다.
+- 유도/이해하는 방식이 몇가지가 있는데...
+- 먼저, deterministic policy gradient의 형태에 대한 직관적인 이해
+- 그다음에 직관으로부터 나온 증명
+- 마지막으로, deterministic policy gradient가 stochastic policy gradient의 제한된 경우라는 점을 보인다.
+
+  ##### 3.1 Action-Value Gradients : gradient 형태에 대한 직관적 이해
+  - 보통 model free RL에서는 greedy하게 action을 선택한다.(greedy policy improvement)
+  - 하지만, continuous action space에서 greedy policy improvement는 문제가 있다.
+  - 그 문제가 뭐냐면, 매 step마다 최댓값을 필요로 한다는 것.(Max값으로 policy를 변동시키는 방식)
+  - 이러지말고 Q의 gradient방향으로 policy를 움직이자.(policy 변동을 gradient로 반영하자)
