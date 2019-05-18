@@ -17,3 +17,10 @@
 
 ### 1. Introduction
 - stochastic policy gradient에서는 policy가 분포형태를 띄게된다.
+
+
+### 2. Background
+- silver 7강의 내용과 일치하는 부분이 대부분이라 넘어간다.
+- 자세한 내용은 [여기](https://github.com/Junhojuno/Lets-RL/blob/master/silver%EA%B0%95%EC%9D%98/07_Policy_Gradient.md)
+
+### 3. Gradients of Deterministic Policies
